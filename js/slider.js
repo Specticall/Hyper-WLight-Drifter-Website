@@ -118,11 +118,15 @@ sliderPreviewImage.forEach((slider) => {
 
 const slideTo = (where) => () => {
   if (where === "next") {
-    changeImage(Math.min(currentSlideNumber + 1, IMAGE_SIZE));
+    changeImage(
+      currentSlideNumber + 1 > IMAGE_SIZE ? 1 : currentSlideNumber + 1
+    );
   }
 
   if (where === "prev") {
-    changeImage(Math.max(currentSlideNumber - 1, 1));
+    changeImage(
+      currentSlideNumber - 1 < 1 ? IMAGE_SIZE : currentSlideNumber - 1
+    );
   }
 };
 

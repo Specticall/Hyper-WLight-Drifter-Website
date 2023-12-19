@@ -1,11 +1,3 @@
-.section {
-  margin-inline: auto;
-  max-width: 1200px;
-  padding-inline: 1.5rem;
-  padding-block: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
