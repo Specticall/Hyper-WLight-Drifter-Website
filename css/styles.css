@@ -1,0 +1,39 @@
+:root {
+  --clr-accent: rgba(253, 27, 94, 255);
+  --clr-dark: rgba(0, 0, 0, 255);
+  --clr-dark-light: rgba(46, 46, 46, 255);
+  --clr-white: rgba(255, 255, 255, 255);
+  --clr-gray: rgb(203, 203, 203);
+
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-medium: 500;
+
+  --fs-huge: 2.5rem;
+  --fs-large: 1.5rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.8rem;
+
+  --max-width: 75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  /* color: var(--clr-white); */
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--clr-dark);
+}
+
+.section {
+  margin-inline: auto;
+  max-width: var(--max-width);
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  margin-bottom: 2rem;
+}
