@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+.boss {
+  position: relative;
+}
+
 .boss .container .map img {
   height: 100%;
   object-fit: cover;
@@ -59,8 +63,95 @@ body {
 
 .boss .container .lower-map {
   height: 100%;
-  width: 20%;
+  width: 100%;
+  inset: 0;
   transition: 0.05s;
   overflow: hidden;
   position: absolute;
+}
+
+.boss-pin .popup {
+  opacity: 0;
+  transition: 0.15s ease-in-out;
+  transform: translateY(5%);
+  user-select: none;
+}
+
+.boss-pin .popup img {
+  border: 0.25rem solid var(--clr-accent);
+}
+
+.boss-pin .skull:hover ~ .popup {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.boss-pin .skull {
+  transition: 0.1s;
+}
+
+.boss-pin .skull:hover {
+  opacity: 0.75;
+}
+
+.boss-pin {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5%;
+
+  cursor: pointer;
+}
+
+.boss-pin img {
+  width: min(3vw, 2rem);
+  border-radius: 0.1rem;
+  box-shadow: 0.25rem 0.25rem 1rem 0rem rgba(82, 82, 82, 0.367);
+}
+
+.boss-pin .popup {
+  width: clamp(4rem, 15vw, 20rem);
+}
+
+.boss-pin .popup p {
+  color: var(--clr-white);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.boss-pin .popup img {
+  width: 100%;
+}
+
+.boss-pin.center {
+  transform: translate(-50%, -85%);
+  top: 50%;
+  left: 50%;
+}
+
+.boss-pin.west {
+  left: 10%;
+  top: 50%;
+  transform: translate(0%, -80%);
+}
+
+.boss-pin.north {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.boss-pin.east {
+  right: 0%;
+  top: 50%;
+  transform: translate(-60%, -100%);
+}
+
+.boss-pin.south {
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
