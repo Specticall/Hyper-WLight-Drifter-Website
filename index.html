@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <section class="section cards">
+      <div class="card-container">
+        <!-- ======== CARD 1 ===== -->
+        <div class="card-item">
+          <div class="image">
+            <img
+              src="https://uploads.codesandbox.io/uploads/user/2e53cfc6-cb39-449e-8438-d8731bb2b14b/eMEl-news_1.png"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <header class="title">
+              <p>3/11/2016</p>
+              <p class="accent">ANNOUNCEMENT</p>
+            </header>
+            <h2>Fast Collision</h2>
+            <p>
+              Hi everyone, Our Fast Collision change is now live, along with a
+              few bug fixes. If you spot any issues with the build, please send
+              an email to support@heart-machine.com detailing the problem along
+              with your hardware specs and OS.
+            </p>
+          </div>
+        </div>
+        <!-- ======== CARD 2 ===== -->
+        <div class="card-item">
+          <div class="image">
+            <img
+              src="https://uploads.codesandbox.io/uploads/user/2e53cfc6-cb39-449e-8438-d8731bb2b14b/eMEl-news_1.png"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <header class="title">
+              <p>3/11/2016</p>
+              <p class="accent">ANNOUNCEMENT</p>
+            </header>
+            <h2>Fast Collision</h2>
+            <p>
+              Hi everyone, Our Fast Collision change is now live, along with a
+              few bug fixes. If you spot any issues with the build, please send
+              an email to support@heart-machine.com detailing the problem along
+              with your hardware specs and OS.
+            </p>
+          </div>
+        </div>
+        <!-- ======== CARD 3===== -->
+        <div class="card-item">
+          <div class="image">
+            <img
+              src="https://uploads.codesandbox.io/uploads/user/2e53cfc6-cb39-449e-8438-d8731bb2b14b/eMEl-news_1.png"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <header class="title">
+              <p>3/11/2016</p>
+              <p class="accent">ANNOUNCEMENT</p>
+            </header>
+            <h2>Fast Collision</h2>
+            <p>
+              Hi everyone, Our Fast Collision change is now live, along with a
+              few bug fixes. If you spot any issues with the build, please send
+              an email to support@heart-machine.com detailing the problem along
+              with your hardware specs and OS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section carousel">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="navigation-button next" data-direction="next">
+            <i class="bx bxs-chevron-right"></i>
+          </div>
+          <div class="navigation-button prev" data-direction="prev">
+            <i class="bx bxs-chevron-left"></i>
+          </div>
+          <div class="image">
+            <img
+              src="./assets/carousel/carousel_1.png"
+              alt=""
+              class="slider__image"
+            />
+          </div>
+        </div>
+        <div class="image-preview">
+          <img
+            src="./assets/carousel/carousel_1.png"
+            alt=""
+            class="selected slider__image-preview"
+            data-image="1"
+          />
+          <img
+            src="./assets/carousel/carousel_2.png"
+            alt=""
+            data-image="2"
+            class="slider__image-preview"
+          />
+          <img
+            src="./assets/carousel/carousel_3.png"
+            alt=""
+            data-image="3"
+            class="slider__image-preview"
+          />
+          <img
+            src="./assets/carousel/carousel_4.png"
+            alt=""
+            data-image="4"
+            class="slider__image-preview"
+          />
+        </div>
+      </div>
+
+      <div class="info">
+        <h2 class="title">The Barren Hills</h2>
+        <div class="difficulty">
+          <p>Difficulty</p>
+          <div class="bullet-container">
+            <div class="bullet" data-level="1"></div>
+            <div class="bullet" data-level="2"></div>
+            <div class="bullet" data-level="3"></div>
+            <div class="bullet" data-level="4"></div>
+            <div class="bullet" data-level="5"></div>
+          </div>
+        </div>
+        <p class="details">
+          <span class="top">
+            The Barren Hills or simply Wastes is the South region of the land of
+            light.
+          </span>
+          <span class="bottom">
+            The Barren Hills is home to a large underground laboratory complex
+            that also serves as a robot factory and is responsible for
+            thecreation of various creatures seen around the world such as the
+            Dirks and blue-skins. Scattered about the desert are a number of
+            ruined mechanical structures resembling pieces of a large spacecraft
+            possibly also created in the labs.
+          </span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
